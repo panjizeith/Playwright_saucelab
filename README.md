@@ -1,8 +1,6 @@
-🧪 Playwright Automated Tests for SauceDemo
-This repository contains automated end-to-end tests for https://www.saucedemo.com using Playwright with JavaScript.
+🧪 Playwright Automated Tests for SauceDemo This repository contains automated end-to-end tests for https://www.saucedemo.com using Playwright with JavaScript.
 
-📌 What We Test
-✅ Login
+📌 What We Test ✅ Login
 
 Valid login with standard user credentials
 
@@ -22,43 +20,28 @@ Complete checkout flow (enter name, address, finish order)
 
 Ensure logout redirects to login page
 
-🚀 How to Run the Tests
-1️⃣ Install dependencies
-bash
-Copy
-Edit
-npm install
-2️⃣ Run all tests
-bash
-Copy
-Edit
-npx playwright test
-3️⃣ Run a specific file
-bash
-Copy
-Edit
-npx playwright test tests/login.spec.js
-4️⃣ Run with report
-bash
-Copy
-Edit
-npx playwright show-report
-⚙ Project Structure
-pgsql
-Copy
-Edit
-.
-├── tests/
-│   ├── login.spec.js
-│   ├── cart.spec.js
-│   ├── checkout.spec.js
-│   └── logout.spec.js
-├── pages/
-│   ├── LoginPage.js
-│   ├── InventoryPage.js
-│   ├── CartPage.js
-│   └── CheckoutPage.js
-├── testdata.js
+🚀 How to Run the Tests 
+1️⃣ Install dependencies 
+    npm install 
+2️⃣ Run all tests 
+    npx playwright test 
+3️⃣ Run a specific file  
+    npx playwright test tests/login.spec.js 
+4️⃣ Run with report 
+    npx playwright show-report 
+
+⚙ Project Structure pgsql . 
+├── tests/ │ 
+    ├── login.spec.js │ 
+    ├── cart.spec.js │ 
+    ├── checkout.spec.js │ 
+    └── logout.spec.js 
+├── pages/ │ 
+    ├── LoginPage.js │ 
+    ├── InventoryPage.js │ 
+    ├── CartPage.js │ 
+    └── CheckoutPage.js 
+├── testdata.js 
 └── README.md
 
 📝 Notes
