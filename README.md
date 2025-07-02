@@ -1,6 +1,8 @@
 🧪 Playwright Automated Tests for SauceDemo This repository contains automated end-to-end tests for https://www.saucedemo.com using Playwright with JavaScript.
 
-📌 What We Test ✅ Login
+📌 What We Test
+
+✅ Login
 
 Valid login with standard user credentials
 
@@ -21,6 +23,7 @@ Complete checkout flow (enter name, address, finish order)
 Ensure logout redirects to login page
 
 🚀 How to Run the Tests 
+```
 1️⃣ Install dependencies 
     npm install 
 2️⃣ Run all tests 
@@ -28,22 +31,26 @@ Ensure logout redirects to login page
 3️⃣ Run a specific file  
     npx playwright test tests/login.spec.js 
 4️⃣ Run with report 
-    npx playwright show-report 
+    npx playwright show-report
+```
 
-⚙ Project Structure pgsql . 
-├── tests/ │ 
-    ├── login.spec.js │ 
-    ├── cart.spec.js │ 
-    ├── checkout.spec.js │ 
-    └── logout.spec.js 
-├── pages/ │ 
-    ├── LoginPage.js │ 
-    ├── InventoryPage.js │ 
-    ├── CartPage.js │ 
-    └── CheckoutPage.js 
-├── testdata.js 
+⚙ Project Structure. 
+```
+├── tests/
+│   ├── login.spec.js
+│   ├── cart.spec.js
+│   ├── checkout.spec.js
+│   └── logout.spec.js
+├── pages/
+│   ├── LoginPage.js
+│   ├── InventoryPage.js
+│   ├── CartPage.js
+│   ├── CheckoutPage.js
+│   └── CompletePage.js  
+├── data/                  
+│   └── testdata.js
 └── README.md
-
+```
 📝 Notes
 
 The credentials used for tests are stored in testdata.js
